@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 connection = pymysql.connect(
     host='localhost',
     user='root',
-    password='pratik',
+    password='pratik@1234',
     database='BigMart'
 )
 
@@ -96,3 +96,4 @@ with open("bigmart_best_model.pkl", "wb") as f:
     pickle.dump((best_pipeline, sklearn.__version__), f)
 
 print(f"\n✅ Best Model: {best_model_name} (R² = {best_score:.4f}) saved successfully as bigmart_best_model.pkl")
+
